@@ -1,3 +1,12 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+class coder
+{
+public:
+    int x, y, index;
+};
+
 int main()
 {
     int n;
@@ -7,10 +16,9 @@ int main()
     for (int i = 0; i <= n; i++)
     {
         bit[i] = 0;
-        /*all the elements of binary index tree should be zero initially otherwise
-        it will cause problems in update function while incrementing a value at an indexin the tree.*/
+        
     }
-    //we dont care about arr[0].
+   
     for (int i = 1; i <= n; i++)
     {
         cin >> arr[i];
